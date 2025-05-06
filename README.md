@@ -1,4 +1,4 @@
-# Portfolio BTS SIO SLAM - Mahamadou SOUKOUNA
+# Portfolio BTS SIO SLAM - Michelson MELGARD
 <img src ="./assets/img/Image 08-07-2024 à 18.24.png/">
 
 ## A propos du projet
