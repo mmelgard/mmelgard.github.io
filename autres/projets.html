@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        content="Portfolio de Michelson MELGARD - Étudiant en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métier)"
+        name="description" />
+    <meta content="MELGARD, Michelson, Portfolio, BTS SIO, SLAM, Baimbridge, Guadeloupe" name="keywords" />
+    <meta content="Michelson MELGARD" name="author" />
+    <title>Portfolio BTS SIO | Michelson MELGARD</title>
+
+    <!-- ===== favicons ===== -->
+    <link href="../assets/img/mslogo-removebg-preview (1).png" rel="icon" />
+
+    <!-- ===== google fonts ===== -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- ===== vendor css ===== -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- ===== main css ===== -->
+    <link href="../assets/css/projets.css" rel="stylesheet" />
+</head>
+<!-- ========== Fin head ========== -->
+
+<body>
+    <!-- ========== header  ========== -->
+    <header style="border-bottom: solid #fff" id="header" class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="header-title">Mes Projets</h1>
+                <ul class="navbar">
+                    <li><a href="../index.html" class="return"><i class="bi bi-house-door"></i> Revenir à l'accueil</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- ========== fin Header ========== -->
+
+    <!-- ========== Projects Section ========== -->
+    <section class="projects-section py-5">
+        <div class="container">
+            <div class="intro-text text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Mon Portfolio de Projets</h2>
+                <p class="lead">Ci-dessous vous retrouverez tous mes projets réalisés au cours de mon parcours de formation. 
+                   Utilisez les filtres pour naviguer par technologie ou cliquez sur un projet pour en savoir plus.</p>
+            </div>
+            
+            <!-- View Toggle Buttons -->
+            <div class="view-toggle mb-3" data-aos="fade-up">
+                <button id="gridViewBtn" class="active tooltip" data-tooltip="Vue grille"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+                <button id="listViewBtn" class="tooltip" data-tooltip="Vue liste"><i class="bi bi-list-ul"></i></button>
+            </div>
+            
+            <!-- Filter Buttons with Tab Design -->
+            <div class="filter-container" data-aos="fade-up">
+                <div class="filter-buttons mb-0">
+                    <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                    <button class="filter-btn" data-filter="php">PHP</button>
+                    <button class="filter-btn" data-filter="csharp">C#</button>
+                    <button class="filter-btn" data-filter="bash">Bash</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                </div>
+                <div class="filter-indicator"></div>
+            </div>
+            
+            <div class="row projects-container mt-5">
+                <div class="col-md-4 project-item" data-category="php web" data-aos="fade-up">
+                    <div class="project-card">
+                        <span class="difficulty-badge difficulty-medium">Niveau : Intermédiaire</span>
+                        <div class="project-image-container">
+                            <img src="../assets/img/Lavage_auto.png" alt="Lavage Auto" class="img-fluid" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Détails"><i class="bi bi-eye"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Code source"><i class="bi bi-code-slash"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Démo live"><i class="bi bi-play-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Lavage Auto</h3>
+                            <p>Un projet de gestion de lavage auto avec suivi des clients et des services. Application complète avec interface admin.</p>
+                            <div class="project-meta">
+                                <span class="badge">PHP</span>
+                                <span class="badge">MySQL</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">TailwindCSS</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat"><i class="bi bi-clock"></i> 3 semaines</div>
+                                <div class="project-stat"><i class="bi bi-calendar-check"></i> Juin 2023</div>
+                            </div>
+                            <div class="project-progress" title="Progression: 100%">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="related-projects">
+                                <h4>Projets similaires :</h4>
+                                <div class="related-projects-list">
+                                    <span class="related-project">Bibliothèque de Jeux</span>
+                                    <span class="related-project">Installation de GLPI</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/username/lavage-auto" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le Répositoire</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 project-item" data-category="csharp" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <span class="difficulty-badge difficulty-hard">Niveau : Avancé</span>
+                        <div class="project-image-container">
+                            <img src="../assets/img/Biblio.png" alt="Bibliothèque de Jeux - Écran de connexion" class="img-fluid" />id" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Détails"><i class="bi bi-eye"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Code source"><i class="bi bi-code-slash"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Démo live"><i class="bi bi-play-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Bibliothèque de Jeux</h3>
+                            <p>Application pour gérer une collection de jeux vidéo avec des fonctionnalités de recherche avancée et statistiques.</p>
+                            <div class="project-meta">
+                                <span class="badge">C#</span>
+                                <span class="badge">Windows Forms</span>
+                                <span class="badge">SQLServer</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat"><i class="bi bi-clock"></i> 4 semaines</div>
+                                <div class="project-stat"><i class="bi bi-calendar-check"></i> Mai 2023</div>
+                            </div>
+                            <div class="project-progress" title="Progression: 90%">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <div class="related-projects">
+                                <h4>Projets similaires :</h4>
+                                <div class="related-projects-list">
+                                    <span class="related-project">Calculatrice en C#</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/username/bibliotheque-jeux" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le Répositoire</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 project-item" data-category="php bash" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <span class="difficulty-badge difficulty-medium">Niveau : Intermédiaire</span>
+                        <div class="project-image-container">
+                            <img src="../assets/img/glpi-debian.jpg" alt="Installation de GLPI sur Debian 12" class="img-fluid" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Détails"><i class="bi bi-eye"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Code source"><i class="bi bi-code-slash"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Démo live"><i class="bi bi-play-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Installation de GLPI sur Debian 12</h3>
+                            <p>Configuration et installation de GLPI pour la gestion des services informatiques avec documentation détaillée.</p>
+                            <div class="project-meta">
+                                <span class="badge">Bash</span>
+                                <span class="badge">PHP</span>
+                                <span class="badge">Linux</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat"><i class="bi bi-clock"></i> 2 semaines</div>
+                                <div class="project-stat"><i class="bi bi-calendar-check"></i> Avril 2023</div>
+                            </div>
+                            <div class="project-progress" title="Progression: 100%">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="related-projects">
+                                <h4>Projets similaires :</h4>
+                                <div class="related-projects-list">
+                                    <span class="related-project">Installation de Debian 12</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/username/glpi-debian" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le Répositoire</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 project-item" data-category="bash" data-aos="fade-up">
+                    <div class="project-card">
+                        <span class="difficulty-badge difficulty-easy">Niveau : Débutant</span>
+                        <div class="project-image-container">
+                            <img src="../assets/img/debian-install.jpg" alt="Installation de Debian 12" class="img-fluid" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Détails"><i class="bi bi-eye"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Code source"><i class="bi bi-code-slash"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Démo live"><i class="bi bi-play-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Installation de Debian 12</h3>
+                            <p>Guide d'installation et configuration de Debian 12 pour un environnement serveur sécurisé.</p>
+                            <div class="project-meta">
+                                <span class="badge">Bash</span>
+                                <span class="badge">Linux</span>
+                                <span class="badge">VirtualBox</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat"><i class="bi bi-clock"></i> 1 semaine</div>
+                                <div class="project-stat"><i class="bi bi-calendar-check"></i> Mars 2023</div>
+                            </div>
+                            <div class="project-progress" title="Progression: 100%">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="related-projects">
+                                <h4>Projets similaires :</h4>
+                                <div class="related-projects-list">
+                                    <span class="related-project">Installation de GLPI</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/username/debian-install" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le Répositoire</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 project-item" data-category="csharp" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <span class="difficulty-badge difficulty-easy">Niveau : Débutant</span>
+                        <div class="project-image-container">
+                            <img src="../assets/img/calculatrice-csharp.jpg" alt="Calculatrice en C#" class="img-fluid" />
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Détails"><i class="bi bi-eye"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Code source"><i class="bi bi-code-slash"></i></a>
+                                    <a href="#" class="project-action-btn tooltip" data-tooltip="Démo live"><i class="bi bi-play-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Calculatrice en C#</h3>
+                            <p>Une application de calculatrice avec des fonctionnalités avancées comme les fonctions scientifiques.</p>
+                            <div class="project-meta">
+                                <span class="badge">C#</span>
+                                <span class="badge">Windows Forms</span>
+                                <span class="badge">.NET</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat"><i class="bi bi-clock"></i> 2 semaines</div>
+                                <div class="project-stat"><i class="bi bi-calendar-check"></i> Février 2023</div>
+                            </div>
+                            <div class="project-progress" title="Progression: 100%">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="related-projects">
+                                <h4>Projets similaires :</h4>
+                                <div class="related-projects-list">
+                                    <span class="related-project">Bibliothèque de Jeux</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/mmelgard/Calculatrice" class="btn btn-primary" target="_blank">
+                                <i class="bi bi-github"></i> Voir le Répositoire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Fin Projects Section ========== -->
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class="slide-up">Michelson MELGARD</h3>
+                    <p>Étudiant en BTS SIO option SLAM</p>
+                    <p class="mt-3 mb-4">Passionné par le développement logiciel et l'analyse de données. Je cherche constamment à améliorer mes compétences pour résoudre des problèmes complexes.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" target="_blank" title="Email"><i class="bi bi-envelope"></i></a>
+                        <a href="#" target="_blank" title="Twitter"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 mt-md-0">
+                    <h4>Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-chevron-right"></i><a href="../index.html">Accueil</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">À propos</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">Compétences</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">Contact</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">CV</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0 footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="bi bi-geo-alt"></i> Guadeloupe, France</p>
+                    <p><i class="bi bi-envelope"></i> contact@michelson-melgard.com</p>
+                    <p><i class="bi bi-phone"></i> +590 xxx xxx xxx</p>
+                    <p><i class="bi bi-clock"></i> Disponible pour un stage à partir de mars 2024</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Michelson MELGARD. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End Footer ========== -->
+
+    <!-- Back to top button -->
+    <a class="back-to-top" title="Retour en haut"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- ===== Vendor JS ===== -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const filterIndicator = document.querySelector('.filter-indicator');
+            const projectItems = document.querySelectorAll('.project-item');
+            const backToTopBtn = document.querySelector('.back-to-top');
+            const gridViewBtn = document.getElementById('gridViewBtn');
+            const listViewBtn = document.getElementById('listViewBtn');
+            const projectsContainer = document.querySelector('.projects-container');
+            const relatedProjects = document.querySelectorAll('.related-project');
+            
+            // Set initial filter indicator position
+            updateFilterIndicator(filterBtns[0]);
+            
+            // Function to update filter indicator position
+            function updateFilterIndicator(activeBtn) {
+                if (!filterIndicator) return;
+                
+                const btnRect = activeBtn.getBoundingClientRect();
+                const containerRect = document.querySelector('.filter-container').getBoundingClientRect();
+                
+                filterIndicator.style.width = `${btnRect.width}px`;
+                filterIndicator.style.left = `${btnRect.left - containerRect.left}px`;
+            }
+            
+            // Filter button click event
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Update indicator position
+                    updateFilterIndicator(this);
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide projects based on filter with animation
+                    projectItems.forEach(item => {
+                        item.classList.remove('fadeInUp');
+                        
+                        if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
+                            setTimeout(() => {
+                                item.style.display = 'block';
+                                item.classList.add('fadeInUp');
+                            }, 300);
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // View toggle functionality
+            gridViewBtn.addEventListener('click', function() {
+                if (this.classList.contains('active')) return;
+                
+                listViewBtn.classList.remove('active');
+                this.classList.add('active');
+                projectsContainer.classList.remove('list-view');
+                
+                // Add animation classes
+                projectItems.forEach(item => {
+                    item.classList.add('fadeInUp');
+                });
+            });
+            
+            listViewBtn.addEventListener('click', function() {
+                if (this.classList.contains('active')) return;
+                
+                gridViewBtn.classList.remove('active');
+                this.classList.add('active');
+                projectsContainer.classList.add('list-view');
+                
+                // Add animation classes
+                projectItems.forEach(item => {
+                    item.classList.add('fadeInUp');
+                });
+            });
+            
+            // Related projects functionality
+            relatedProjects.forEach(project => {
+                project.addEventListener('click', function() {
+                    const projectName = this.textContent.trim();
+                    
+                    // Find the project with matching name
+                    projectItems.forEach(item => {
+                        const itemTitle = item.querySelector('h3').textContent.trim();
+                        
+                        if (itemTitle === projectName) {
+                            // Scroll to that project
+                            item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            
+                            // Highlight the project briefly
+                            const projectCard = item.querySelector('.project-card');
+                            projectCard.style.transform = 'scale(1.05)';
+                            setTimeout(() => {
+                                projectCard.style.transform = '';
+                            }, 1000);
+                        }
+                    });
+                });
+            });
+            
+            // Back to top button functionality
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('active');
+                } else {
+                    backToTopBtn.classList.remove('active');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Handle window resize for filter indicator
+            window.addEventListener('resize', function() {
+                const activeBtn = document.querySelector('.filter-btn.active');
+                if (activeBtn) {
+                    updateFilterIndicator(activeBtn);
+                }
+            });
+            
+            // Initialize animations
+            projectItems.forEach(item => {
+                item.classList.add('fadeInUp');
+            });
+        });
+    </script>
+</body>
+</html>

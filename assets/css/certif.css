@@ -1,0 +1,768 @@
+/*--------------------------------------------------------------
+# GENERAL
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  color: #444444;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #106eea;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #3b8af2;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.section-divider {
+  height: 3px;
+  width: 60px;
+  background-color: #106eea;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #195c87;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.section-title .subtitle {
+  font-size: 18px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 15px 0;
+  background: #195c87;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+#header .logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo-dot {
+  color: #f03c02;
+}
+
+.navbar a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.navbar a:hover, 
+.navbar .active {
+  color: #fff;
+}
+
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.getstarted {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 8px 20px !important;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.getstarted:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+
+.getstarted:before {
+  display: none !important;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#certif-hero {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(25, 92, 135, 0.9), rgba(25, 92, 135, 0.7)), url("../img/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+#certif-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#certif-hero h2 {
+  font-size: 22px;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btn-scroll {
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  transition: all 0.4s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-scroll i {
+  margin-left: 8px;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.btn-scroll:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-scroll:hover i {
+  transform: translateY(3px);
+}
+
+/*--------------------------------------------------------------
+# Certification Details
+--------------------------------------------------------------*/
+.certif-details {
+  padding: 60px 0;
+}
+
+.certif-description-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card-icon {
+  color: #106eea;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.certif-list {
+  list-style: none;
+  padding: 0;
+}
+
+.certif-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.certif-list li i {
+  color: #106eea;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/*--------------------------------------------------------------
+# Certificates Section
+--------------------------------------------------------------*/
+.certificates {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.certificate-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.certificate-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: rgba(16, 110, 234, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-icon i {
+  color: #106eea;
+  font-size: 40px;
+}
+
+.certificate-card h3 {
+  color: #195c87;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.certificate-details {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-item i {
+  color: #106eea;
+  margin-right: 10px;
+}
+
+.certificate-card p {
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Badge Cisco */
+.cisco-badge {
+  max-width: 180px;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.cisco-badge img {
+  border-radius: 0;  /* Changé de 50% à 0 pour rendre l'image carrée */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card:hover .cisco-badge {
+  transform: scale(1.05);
+}
+
+/* Carte de certification obtenue */
+.certificate-card.obtained {
+  border-left: 4px solid #28a745;
+  border-right: 4px solid #28a745;
+}
+
+/* Indicateur de statut des certifications */
+.certification-status {
+  display: inline-flex;
+  align-items: center;
+  color: #f39c12;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.certification-status i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.certification-status.success {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Info box */
+.info-box {
+  background-color: #e7f3ff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 30px !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-text {
+  color: #195c87;
+  font-size: 16px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-text i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.btn-certificate {
+  display: inline-flex;
+  align-items: center;
+  background: #106eea;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-certificate i {
+  margin-right: 8px;
+}
+
+.btn-certificate:hover {
+  background: #3b8af2;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Upcoming Certifications Section
+--------------------------------------------------------------*/
+.upcoming-certifications {
+  padding: 60px 0;
+}
+
+.upcoming-certif-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.upcoming-certif-item {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.upcoming-certif-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.upcoming-certif-item p {
+  color: #6c757d;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+/* Style pour les certifications Cisco */
+.upcoming-certif-item.cisco {
+  border-left: 3px solid #1ba0d7;
+}
+
+.progress-icon.cisco {
+  background: rgba(27, 160, 215, 0.1);
+}
+
+.progress-icon.cisco i {
+  color: #1ba0d7;
+}
+
+.progress-bar.cisco {
+  background-color: #1ba0d7;
+}
+
+.cisco-label {
+  display: inline-block;
+  background: #1ba0d7;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-weight: 600;
+}
+
+.certif-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.progress-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(16, 110, 234, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.progress-icon i {
+  color: #106eea;
+  font-size: 24px;
+}
+
+.progress-bar-container {
+  flex-grow: 1;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background-color: #106eea;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+}
+
+.upcoming-certif-item h3 {
+  font-size: 20px;
+  color: #195c87;
+  margin-bottom: 10px;
+}
+
+.upcoming-certif-item p {
+  color: #6c757d;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Completed Courses Section
+--------------------------------------------------------------*/
+.completed-courses {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+/* Bouton d'accès au tableau de bord OpenClassrooms */
+.btn-dashboard {
+  display: inline-flex;
+  align-items: center;
+  background: #7451eb;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(116, 81, 235, 0.3);
+}
+
+.btn-dashboard i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.btn-dashboard:hover {
+  background: #8a68f0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(116, 81, 235, 0.4);
+  color: #fff;
+}
+
+.course-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.course-category {
+  background: rgba(16, 110, 234, 0.1);
+  color: #106eea;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  color: #195c87;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  min-height: 50px;
+}
+
+.course-platform {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.platform-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.course-completion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.course-completion i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #f1f6fe;
+  color: #106eea;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .course-card h3 {
+    min-height: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Grafikart Courses Section
+--------------------------------------------------------------*/
+.grafikart-courses {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.btn-dashboard.grafikart {
+  background: #2c3e50;  /* Couleur de Grafikart */
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
+}
+
+.btn-dashboard.grafikart:hover {
+  background: #34495e;
+  box-shadow: 0 6px 20px rgba(44, 62, 80, 0.4);
+}
+
+.course-card.grafikart {
+  border-left: 3px solid #2c3e50;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #fff;
+  padding: 0;
+  color: #444444;
+  font-size: 14px;
+  background: #f1f6fe;
+}
+
+#footer .copyright-wrap {
+  border-top: 1px solid #e2eafc;
+  padding: 20px 0;
+}
+
+#footer .copyright {
+  float: left;
+}
+
+#footer .credits {
+  float: right;
+  font-size: 13px;
+}
+
+#footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #195c87;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #3b8af2;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #106eea;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #3284f1;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #certif-hero h1 {
+    font-size: 36px;
+  }
+  
+  #certif-hero h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #certif-hero {
+    height: 70vh;
+  }
+  
+  .certificate-card {
+    margin-bottom: 30px;
+  }
+  
+  #footer .copyright, 
+  #footer .credits {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  #certif-hero h1 {
+    font-size: 28px;
+  }
+  
+  #certif-hero h2 {
+    font-size: 16px;
+  }
+  
+  .certif-description-card,
+  .certificate-card,
+  .upcoming-certif-container,
+  .upcoming-certif-item {
+    padding: 20px;
+  }
+}
